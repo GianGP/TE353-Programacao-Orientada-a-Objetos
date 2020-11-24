@@ -79,7 +79,7 @@ int main() {
 	return 0;
 }
 
-// Função para cirar um numero racional
+// FunÃ§Ã£o para cirar um numero racional
 
 struct racional criar_racional(char ix_num){
 	
@@ -95,7 +95,7 @@ struct racional criar_racional(char ix_num){
 	return rac;
 };
 
-// Função para calcular o máximo divisor comum entre dois números
+// FunÃ§Ã£o para calcular o mÃ¡ximo divisor comum entre dois nÃºmeros
 
 int mdc(int num, int den){
     int mdc, resto;
@@ -112,7 +112,7 @@ int mdc(int num, int den){
     return mdc;
 };
 
-// Função para simplificar frações
+// FunÃ§Ã£o para simplificar fraÃ§Ãµes
 
 struct racional simplificar_fracao(struct racional rac){
 	struct racional simplificado;
@@ -126,7 +126,7 @@ struct racional simplificar_fracao(struct racional rac){
 	return simplificado;
 }
 
-// Função para somar duas frações
+// FunÃ§Ã£o para somar duas fraÃ§Ãµes
 
 struct racional somar(struct racional a, struct racional b){
 	struct racional res_soma;
@@ -137,7 +137,7 @@ struct racional somar(struct racional a, struct racional b){
 	return res_soma;
 }
 
-// Função para subtrair duas frações
+// FunÃ§Ã£o para subtrair duas fraÃ§Ãµes
 
 struct racional subtrair(struct racional a, struct racional b){
 	struct racional res_sub;
@@ -148,7 +148,7 @@ struct racional subtrair(struct racional a, struct racional b){
 	return res_sub;
 }
 
-// Função para multiplicar duas frações
+// FunÃ§Ã£o para multiplicar duas fraÃ§Ãµes
 
 struct racional multiplicar(struct racional a, struct racional b){
 	struct racional res_mult;
@@ -159,7 +159,7 @@ struct racional multiplicar(struct racional a, struct racional b){
 	return res_mult;
 }
 
-// Função para dividir duas frações
+// FunÃ§Ã£o para dividir duas fraÃ§Ãµes
 
 struct racional dividir(struct racional a, struct racional b){
 	struct racional res_divi;
@@ -170,7 +170,7 @@ struct racional dividir(struct racional a, struct racional b){
 	return res_divi;
 }
 
-// Simplificação de fração em modo ponto flutuante
+// SimplificaÃ§Ã£o de fraÃ§Ã£o em modo ponto flutuante
 
 float ponto_flutuante(struct racional rac){
 	return (float) rac.num/rac.den;
