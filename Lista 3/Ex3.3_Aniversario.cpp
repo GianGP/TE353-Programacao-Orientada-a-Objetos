@@ -4,7 +4,7 @@
 #include <stdbool.h>
 using namespace std;
 
-string meses[12] = {"Janeiro", "Feveiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"};
+string meses[12] = {"Janeiro", "Feveiro", "MarÃ§o", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"};
 
 class Aniversario{
 	public:
