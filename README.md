@@ -3,4 +3,5 @@
  
  <b>Lista 1: </b> Fundamentos de C <br>
  <b>Lista 2: </b> Structs em C <br>
- <b>Lista 3: </b> Objetos em C++
+ <b>Lista 3: </b> Objetos em C++ <br>
+ <b>Lista 4: </b> Construtores e Destrutores em C++
