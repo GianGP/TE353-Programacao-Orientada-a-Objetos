@@ -1,17 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <ctype.h>
 
-void criptografia(char *vetor){
-	
-	int i;
-	
-	for(i = 0; i < strlen(vetor); i++)
-		if(vetor[i] == 'a')
-			printf("P");
-
-	
-}
+void criptografia(char *vetor);
 
 int main() {
 	
@@ -21,8 +13,19 @@ int main() {
 	gets(frase);
 	
 	criptografia(frase);
+	
+	printf("Frase criptografada: %s", frase);
 
 	return 0;
 }
 
-
+// Função para critografar strings
+void criptografia(char *vector){
+	int i;
+	char aux;
+	
+	for(i = 0; i < strlen(vector); i++){
+		aux = tolower(vector[i]);
+		vector[i] = (aux == 'a' || aux == 'e' || aux == 'i' || aux == 'o' || aux == 'u') ? '*' : vector[i];
+	}	
+}
