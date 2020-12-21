@@ -4,12 +4,12 @@ using namespace std;
 
 // Seta valores default na construção do objeto
 Empresa::Empresa(){
-	name = "Empresa";
-	end = "R. Empresa, 10";
-	cid = "Cidade";
-	est = "Estado";
-	cep_emp = "CEP";
-	tel = "Telefone";
+	name = "Nome da Empresa (pode ter espacos)";
+	end = "R. Empresa, 10 (pode ter espacos)";
+	cid = "Sao Jose dos Pinhais (pode ter espacos)";
+	est = "PR (somente a sigla)";
+	cep_emp = "80050380 (somente o numero)";
+	tel = "42999548468 (somente o numero com DDD)";
 }
 
 // Seta valores parametrizados na construção do objeto
@@ -27,11 +27,11 @@ void Empresa::getdata(){
 	cout << "\nInsira os dados para criar a sua nova empresa:";
 	cout << "\n----------------------------------------------\n";
 	cout << "Nome da empresa: ";
-	cin >> name;
+	getline(cin, name);
 	cout << "Endereco Comercial: ";
-	cin >> end;
+	getline(cin, end);
 	cout << "Cidade: ";
-	cin >> cid;
+	getline(cin, cid);
 	cout << "Estado: ";
 	cin >> est;
 	cout << "CEP: ";
@@ -53,8 +53,8 @@ void Empresa::putdata(){
 
 // Seta valores default na construção do objeto
 Restaurante::Restaurante():Empresa(){
-	food = "Comida";
-	price = 50.0;
+	food = "Comida (sem espacos)";
+	price = 50.5;
 }
 
 // Seta valores parametrizados na construção do objeto
@@ -69,7 +69,7 @@ void Restaurante::getdata(){
 	Empresa::getdata();
 	cout << "Tipo de Comida do Restaurante: ";
 	cin >> food;
-	cout << "Preco Medio dos Pratos: ";
+	cout << "Preco Medio dos Pratos: R$ ";
 	cin >> price;
 }
 
@@ -78,6 +78,5 @@ void Restaurante::putdata(){
 	Empresa::putdata();
 	cout << "\nTipo de comida: " << food;
 	cout << "\nPreco Medio: R$ " << price;
-	cout << "\n\n";
 }
 
