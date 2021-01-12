@@ -7,3 +7,4 @@
  <b>Lista 4: </b> Construtores e Destrutores em C++<br>
  <b>Lista 5: </b> Sobreposição de Operadores em C++<br>
  <b>Lista 6: </b> Herança Simples em C++<br>
+ <b>Lista 7: </b> Herança Múltipla em C++<br>
