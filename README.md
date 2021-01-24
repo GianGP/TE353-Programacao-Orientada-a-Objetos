@@ -8,3 +8,4 @@
  <b>Lista 5: </b> Sobreposição de Operadores em C++<br>
  <b>Lista 6: </b> Herança Simples em C++<br>
  <b>Lista 7: </b> Herança Múltipla em C++<br>
+ <b>Lista 8: </b> Polimorfismo e Funções Virtuais em C++<br>
